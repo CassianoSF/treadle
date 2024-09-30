@@ -8,11 +8,30 @@
       "outputs": [".next/**", "!.next/cache/**"]
     },
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": ["^topo"]
+    },
+    "typecheck": {
+      "dependsOn": ["^topo"],
+      "outputs": ["node_modules/.cache/tsbuildinfo.json"]
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "supabase:start": {
+      "cache": false
+    },
+    "supabase:stop": {
+      "cache": false
+    },
+    "supabase:status": {
+      "cache": false
+    },
+    "supabase:db:reset": {
+      "cache": false
+    },
+    "supabase:generate:types": {
+      "outputs": ["packages/database-types/src/index.ts"]
     }
   }
 }

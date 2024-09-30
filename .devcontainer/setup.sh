@@ -1,6 +1,7 @@
 # sudo chmod +x ./.devcontainer/setup.sh
 # ./.devcontainer/setup.sh
 
+git config --global --add safe.directory /workspace/treadle
 git config --global user.email "cassianosfranco@gmail.com"
 git config --global user.name "cassianosf"
 

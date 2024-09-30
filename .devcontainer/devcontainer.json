@@ -2,10 +2,10 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
   "name": "Treadle Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
-	"remoteUser": "vscode"
+  "dockerComposeFile": "docker-compose.yml",
+	"remoteUser": "vscode",
+	"service": "vscode",
+	"workspaceFolder": "/workspace/treadle"
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
